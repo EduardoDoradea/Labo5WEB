@@ -19,6 +19,7 @@ const cientificos = [
   }
 ]
 
+//Esta funcion almacena la informacion del cientifico y la muestra en formato html
 function TarjetaCientifico({ cientifico }) {
   return (
     <div className="contenedorCientificos">
@@ -39,6 +40,7 @@ function App() {
   return (
     <>
       <h1><strong>Científicos Notables</strong></h1>
+      //Mostramos los datos del cientifico en x posicion con el formato de la funcion que se creo anteriormente
       <TarjetaCientifico cientifico={cientificos[0]} />
       <hr />
       <TarjetaCientifico cientifico={cientificos[1]} />
